@@ -14,12 +14,29 @@ class _KoleksiBukuState extends State<KoleksiBuku> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Koleksi Buku Anda',
+          'Koleksi',
           style: TextStyles.title.copyWith(fontSize: 20.0),
         ),
         centerTitle: true,
         backgroundColor: Colors.orange,
         elevation: 0,
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 20.0),
+            Row(
+              children: [
+                SizedBox(width: 20.0),
+                Text(
+                  'Buku Favorit Anda',
+                  style: TextStyles.title.copyWith(fontSize: 25.0),
+                ),
+              ],
+            ),
+
+          ],
+        ),
       ),
     );
   }

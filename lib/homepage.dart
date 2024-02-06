@@ -290,10 +290,10 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 24.0),
+                  SizedBox(height: 24.0),
                   Row(
                     children: [
-                      const SizedBox(width: 20.0),
+                      SizedBox(width: 20.0),
                       Container(
                         width: 100,
                         decoration: BoxDecoration(
@@ -463,8 +463,8 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     child: Row(
                       children: [
-                        SizedBox(height: 180.0),
-                        SizedBox(width: 70.0),
+                        SizedBox(height: 155.0),
+                        SizedBox(width: 95.0),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(
@@ -490,7 +490,6 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
-        
       ),
     );
   }

@@ -33,21 +33,21 @@ class _LoginScreenState extends State<LoginScreen> {
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.all(30.0),
+            padding: EdgeInsets.all(30.0),
             child: Column(
               children: [
                 Image.asset('assets/images/logoo.png'),
-                const SizedBox(height: 5.0),
+                SizedBox(height: 5.0),
                 Text(
                     'Masuk',
                     style: TextStyles.title.copyWith(fontSize: 25.0),
                 ),
-                const SizedBox(height: 5.0),
+                SizedBox(height: 5.0),
                 Text(
                     'Login Ke Akun Anda',
                     style: TextStyles.title.copyWith(fontSize: 15.0),
                 ),
-                const SizedBox(height: 40.0),
+                SizedBox(height: 40.0),
               TextField(
                 style: TextStyles.body,
                 keyboardType: TextInputType.emailAddress,

@@ -14,12 +14,29 @@ class _SejarahState extends State<Sejarah> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Daftar Buku Sejarah',
+          'Digital Library',
           style: TextStyles.title.copyWith(fontSize: 20.0),
         ),
         centerTitle: true,
         backgroundColor: Colors.orange,
         elevation: 0,
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(height: 20.0),
+            Row(
+              children: [
+                SizedBox(width: 20.0),
+                Text(
+                  'Daftar Buku Sejarah',
+                  style: TextStyles.title.copyWith(fontSize: 25.0),
+                ),
+              ],
+            ),
+
+          ],
+        ),
       ),
     );
   }
