@@ -317,7 +317,7 @@ class _HomePageState extends State<HomePage> {
                                   topRight: Radius.circular(8.0),
                                 ),
                                 child: Image(
-                                  image: AssetImage('assets/images/kancil.png'),
+                                  image: AssetImage('assets/images/dongeng/kancil.png'),
                                   height: 150,
                                   width: 100,
                                   fit: BoxFit.cover,
@@ -370,7 +370,7 @@ class _HomePageState extends State<HomePage> {
                                           topRight: Radius.circular(8.0),
                                         ),
                                         child: Image(
-                                          image: AssetImage('assets/images/sebelang.png'),
+                                          image: AssetImage('assets/images/dongeng/sebelang.png'),
                                           height: 150,
                                           width: 100,
                                           fit: BoxFit.cover,
