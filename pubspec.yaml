@@ -70,16 +70,21 @@ flutter:
      - assets/images/dongeng/aks.jpg
      - assets/images/dongeng/ala.jpg
      - assets/images/dongeng/blm.jpg
-     - assets/images/dongeng/jpk.jpg
      - assets/images/dongeng/kk.jpg
      - assets/images/dongeng/kkk.jpg
      - assets/images/dongeng/kyn.jpg
-     - assets/images/dongeng/tab.jpg
      - assets/images/dongeng/ts.jpg
-     - assets/images/gadisk.png
-     - assets/images/laskarpel.png
-     - assets/images/roro.png
-     - assets/images/sangpem.png
+     - assets/images/pendidikan/910.jpg
+     - assets/images/pendidikan/ddbd.jpg
+     - assets/images/pendidikan/end.jpg
+     - assets/images/pendidikan/ga.png
+     - assets/images/pendidikan/laskarpel.png
+     - assets/images/pendidikan/oobi.jpg
+     - assets/images/pendidikan/r1.jpg
+     - assets/images/pendidikan/mgp.jpg
+     - assets/images/pendidikan/sangpem.png
+     - assets/images/pendidikan/ranah.jpg
+     -
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

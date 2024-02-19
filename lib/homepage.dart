@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     child: Row(
                       children: [
-                        SizedBox(width: 20.0),
+                        SizedBox(width: 15.0),
                         Text(
                           'Kategori',
                           style: TextStyles.title.copyWith(fontSize: 25.0),
@@ -62,10 +62,11 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   SizedBox(height: 5.0),
-                  Container(
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
                     child:  Row(
                       children: [
-                        SizedBox(width: 20.0),
+                        SizedBox(width: 15.0),
                         ElevatedButton(
                           onPressed: () {
                             Navigator.push(
@@ -105,365 +106,989 @@ class _HomePageState extends State<HomePage> {
                           },
                           child: Text ('Sejarah'),
                         ),
+                        SizedBox(width: 15.0),
                       ],
                     ),
                   ),
+
                   SizedBox(height: 24.0),
                   Row(
                     children: [
-                      SizedBox(width: 20.0),
+                      SizedBox(width: 15.0),
                       Text(
                         'Rekomendasi Buku',
                         style: TextStyles.title.copyWith(fontSize: 25.0),
                       ),
                     ],
                   ),
-                  SizedBox(height: 10.0),
-                  Row(
-                    children: [
-                      SizedBox(width: 20.0),
-                      Container(
-                        width: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8.0),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 2,
-                              blurRadius: 5,
-                              offset: Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: Row(
-                          children: [
-                            Column(
-                              children: [
-                                Container(
-                                  child: ClipRRect(
-                                    borderRadius: BorderRadius.only(
-                                      topLeft: Radius.circular(8.0),
-                                      topRight: Radius.circular(8.0),
-                                    ),
-                                    child: Image(
-                                      image: AssetImage('assets/images/roro.png'),
-                                      height: 150,
-                                      width: 100,
-                                      fit: BoxFit.cover,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 2),
-                                Padding(
-                                  padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
-                                  child: Column(
-                                    children: [
-                                      Text("Roro Jonggrang", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
-                                      Row(
-                                        children: [
-                                          Icon(Icons.star, color: Colors.yellow, size: 15,),
-                                          Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
-                                        ],
-                                      )
-                                    ],
-                                  ),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                      ),
-                      Row(
-                        children: [
-                          const SizedBox(width: 20.0),
-                          Container(
-                            width: 100,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8.0),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 2,
-                                  blurRadius: 5,
-                                  offset: Offset(0, 3),
-                                ),
-                              ],
-                            ),
-                            child: Row(
-                              children: [
-                                Column(
-                                  children: [
-                                    Container(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(8.0),
-                                          topRight: Radius.circular(8.0),
-                                        ),
-                                        child: Image(
-                                          image: AssetImage('assets/images/sangpem.png'),
-                                          height: 150,
-                                          width: 100,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(height: 2),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
-                                      child: Column(
-                                        children: [
-                                          Text("Sang Pemimpi", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
-                                          Row(
-                                            children: [
-                                              Icon(Icons.star, color: Colors.yellow, size: 15,),
-                                              Text("4.5", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              const SizedBox(width: 20.0),
-                              Container(
-                                width: 100,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      spreadRadius: 2,
-                                      blurRadius: 5,
-                                      offset: Offset(0, 3),
-                                    ),
-                                  ],
-                                ),
-                                child: Row(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Container(
-                                          child: ClipRRect(
-                                            borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(8.0),
-                                              topRight: Radius.circular(8.0),
-                                            ),
-                                            child: Image(
-                                              image: AssetImage('assets/images/laskarpel.png'),
-                                              height: 150,
-                                              width: 100,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        SizedBox(height: 2),
-                                        Padding(
-                                          padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
-                                          child: Column(
-                                            children: [
-                                              Text("Laskar Pelangi", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
-                                              Row(
-                                                children: [
-                                                  Icon(Icons.star, color: Colors.yellow, size: 15,),
-                                                  Text("4.8", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
-                                                ],
-                                              )
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  ],
-                                ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
                               ),
                             ],
                           ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 24.0),
-                  Row(
-                    children: [
-                      SizedBox(width: 20.0),
-                      Container(
-                        width: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(8.0),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.grey.withOpacity(0.5),
-                              spreadRadius: 2,
-                              blurRadius: 5,
-                              offset: Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          children: [
-                            Container(
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(8.0),
-                                  topRight: Radius.circular(8.0),
-                                ),
-                                child: Image(
-                                  image: AssetImage('assets/images/dongeng/kancil.png'),
-                                  height: 150,
-                                  width: 100,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            SizedBox(height: 2),
-                            Padding(
-                              padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
-                              child: Column(
+                          child: Row(
+                            children: [
+                              Column(
                                 children: [
-                                  Text("Kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
-                                  Row(
-                                    children: [
-                                      Icon(Icons.star, color: Colors.yellow, size: 15,),
-                                      Text("4.5", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
-                                    ],
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
                                   )
                                 ],
                               ),
-                            )
-                          ],
-                        ),
-                      ),
-                      Row(
-                        children: [
-                          const SizedBox(width: 20.0),
-                          Container(
-                            width: 100,
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8.0),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.5),
-                                  spreadRadius: 2,
-                                  blurRadius: 5,
-                                  offset: Offset(0, 3),
-                                ),
-                              ],
-                            ),
-                            child: Row(
-                              children: [
-                                Column(
-                                  children: [
-                                    Container(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.only(
-                                          topLeft: Radius.circular(8.0),
-                                          topRight: Radius.circular(8.0),
-                                        ),
-                                        child: Image(
-                                          image: AssetImage('assets/images/dongeng/sebelang.png'),
-                                          height: 150,
-                                          width: 100,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                    SizedBox(height: 2),
-                                    Padding(
-                                      padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
-                                      child: Column(
-                                        children: [
-                                          Text("Semut dan Belalang", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
-                                          Row(
-                                            children: [
-                                              Icon(Icons.star, color: Colors.yellow, size: 15,),
-                                              Text("4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-
-                              ],
-                            ),
+                            ],
                           ),
-                          Row(
-                            children: [
-                              const SizedBox(width: 20.0),
-                              Container(
-                                width: 100,
-                                decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(8.0),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: Colors.grey.withOpacity(0.5),
-                                      spreadRadius: 2,
-                                      blurRadius: 5,
-                                      offset: Offset(0, 3),
-                                    ),
-                                  ],
-                                ),
-                                child: Row(
-                                  children: [
-                                    Column(
-                                      children: [
-                                        Container(
-                                          child: ClipRRect(
-                                            borderRadius: BorderRadius.only(
-                                              topLeft: Radius.circular(8.0),
-                                              topRight: Radius.circular(8.0),
-                                            ),
-                                            child: Image(
-                                              image: AssetImage('assets/images/gadisk.png'),
-                                              height: 150,
-                                              width: 100,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        SizedBox(height: 2),
-                                        Padding(
-                                          padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
-                                          child: Column(
-                                            children: [
-                                              Text("Gadis Kretek", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
-                                              Row(
-                                                children: [
-                                                  Icon(Icons.star, color: Colors.yellow, size: 15,),
-                                                  Text("4.7", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
-                                                ],
-                                              )
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
-
-                                  ],
-                                ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
                               ),
                             ],
                           ),
-                        ],
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                      ],
+                    ),
+                  ),
+
+                  SizedBox(height: 24.0),
+                  Row(
+                    children: [
+                      SizedBox(width: 15.0),
+                      Text(
+                        'Buku Terlaris',
+                        style: TextStyles.title.copyWith(fontSize: 25.0),
                       ),
                     ],
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: [
+                        SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),SizedBox(width: 15.0),
+                        Container(
+                          width: 100,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(8.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey.withOpacity(0.5),
+                                spreadRadius: 2,
+                                blurRadius: 5,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: Row(
+                            children: [
+                              Column(
+                                children: [
+                                  Container(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.only(
+                                        topLeft: Radius.circular(8.0),
+                                        topRight: Radius.circular(8.0),
+                                      ),
+                                      child: Image(
+                                        image: AssetImage('assets/images/dongeng/kancil.png'),
+                                        height: 150,
+                                        width: 100,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                  SizedBox(height: 2),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 5, left: 8, right: 8, bottom: 5),
+                                    child: Column(
+                                      children: [
+                                        Text("kancil dan Buaya", style: TextStyle(fontWeight: FontWeight.w900, fontSize: 8)),
+                                        Row(
+                                          children: [
+                                            Icon(Icons.star, color: Colors.yellow, size: 15,),
+                                            Text("4.4", style: TextStyle(fontWeight: FontWeight.w300, fontSize: 10)),
+                                          ],
+                                        )
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 15.0),
+                      ],
+                    ),
                   ),
                   Container(
                     child: Row(
                       children: [
-                        SizedBox(height: 155.0),
+                        SizedBox(height: 100.0),
                         SizedBox(width: 95.0),
                         ElevatedButton(
                           onPressed: () {
