@@ -2,14 +2,14 @@
 import 'package:digital_library/styles.dart';
 import 'package:flutter/material.dart';
 
-class Pinjam22 extends StatefulWidget {
-  const Pinjam22({Key? key}) : super(key: key);
+class Pinjam18 extends StatefulWidget {
+  const Pinjam18({Key? key}) : super(key: key);
 
   @override
-  State<Pinjam22> createState() => _Pinjam22State();
+  State<Pinjam18> createState() => _Pinjam18State();
 }
 
-class _Pinjam22State extends State<Pinjam22> {
+class _Pinjam18State extends State<Pinjam18> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,7 +73,7 @@ class _Pinjam22State extends State<Pinjam22> {
                                 topRight: Radius.circular(8.0),
                               ),
                               child: Image(
-                                image: AssetImage('assets/images/pendidikan/ddbd.jpg'),
+                                image: AssetImage('assets/images/fiksi/oop.jpg'),
                                 height: 150,
                                 width: 100,
                                 fit: BoxFit.cover,
@@ -86,7 +86,7 @@ class _Pinjam22State extends State<Pinjam22> {
                                 top: 5, left: 8, right: 8, bottom: 5),
                             child: Column(
                               children: [
-                                Text("Daring Belajar Dirumah",
+                                Text("Orang Orang Proyek",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w900,
                                         fontSize: 8)),
@@ -97,7 +97,7 @@ class _Pinjam22State extends State<Pinjam22> {
                                       color: Colors.yellow,
                                       size: 15,
                                     ),
-                                    Text("3.5",
+                                    Text("4.2",
                                         style: TextStyle(
                                             fontWeight: FontWeight.w300,
                                             fontSize: 10)),
@@ -116,36 +116,36 @@ class _Pinjam22State extends State<Pinjam22> {
                     scrollDirection: Axis.horizontal,
                     child: Column(
                       children: [
-                        Align(alignment: Alignment.topLeft,child: Text("Judul : Daring Duraring Belajar Dirumah")
+                        Align(alignment: Alignment.topLeft,child: Text("Judul : Orang Orang Proyek")
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Penulis : Momon Sudarma"),
+                        Align(alignment: Alignment.topLeft,child: Text("Penulis : Ahmad Tohari"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Penerbit : Elex Media Komputindo"),
+                        Align(alignment: Alignment.topLeft,child: Text("Penerbit : Gramedia Pustaka Utama"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Th.Terbit : 04 Agustus 2021"),
+                        Align(alignment: Alignment.topLeft,child: Text("Th.Terbit : 13 Jan 2019"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Kategori : Cerita Anak"),
+                        Align(alignment: Alignment.topLeft,child: Text("Kategori : Cerita Fiksi"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:10),
                         Row(
-                            children: [
-                              ElevatedButton(onPressed: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => Pinjam22()),
-                                );
-                              }, child: Text("Pinjam")),
+                          children: [
+                            ElevatedButton(onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Pinjam18()),
+                              );
+                            }, child: Text("Pinjam")),
 
-                            ]),
+                        ]),
                       ],
                     ),
                   ),
@@ -174,7 +174,7 @@ class _Pinjam22State extends State<Pinjam22> {
                       SizedBox(height: 10.0),
                       Text('data')
                     ],
-                  ),
+                ),
                 ],
               ),
             ),

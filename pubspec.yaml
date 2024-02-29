@@ -94,6 +94,16 @@ flutter:
      - assets/images/sejarah/san.jpg
      - assets/images/sejarah/stu.jpg
      - assets/images/sejarah/tm.jpg
+     - assets/images/fiksi/dlk.jpg
+     - assets/images/fiksi/gadisk.png
+     - assets/images/fiksi/hsd.jpg
+     - assets/images/fiksi/ht.jpg
+     - assets/images/fiksi/lb.jpg
+     - assets/images/fiksi/mpk.jpg
+     - assets/images/fiksi/n5m.jpg
+     - assets/images/fiksi/oop.jpg
+     - assets/images/fiksi/rdp.jpg
+     - assets/images/fiksi/sbb.jpg
      -
 
   # An image asset can refer to one or more resolution-specific "variants", see

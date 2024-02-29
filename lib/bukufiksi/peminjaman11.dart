@@ -2,14 +2,14 @@
 import 'package:digital_library/styles.dart';
 import 'package:flutter/material.dart';
 
-class Pinjam1 extends StatefulWidget {
-  const Pinjam1({Key? key}) : super(key: key);
+class Pinjam11 extends StatefulWidget {
+  const Pinjam11({Key? key}) : super(key: key);
 
   @override
-  State<Pinjam1> createState() => _Pinjam1State();
+  State<Pinjam11> createState() => _Pinjam11State();
 }
 
-class _Pinjam1State extends State<Pinjam1> {
+class _Pinjam11State extends State<Pinjam11> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,7 +73,7 @@ class _Pinjam1State extends State<Pinjam1> {
                                 topRight: Radius.circular(8.0),
                               ),
                               child: Image(
-                                image: AssetImage('assets/images/dongeng/kancil.png'),
+                                image: AssetImage('assets/images/fiksi/dlk.jpg'),
                                 height: 150,
                                 width: 100,
                                 fit: BoxFit.cover,
@@ -86,7 +86,7 @@ class _Pinjam1State extends State<Pinjam1> {
                                 top: 5, left: 8, right: 8, bottom: 5),
                             child: Column(
                               children: [
-                                Text("Kancil da Buaya",
+                                Text("Dibawah Lindungan Ka'bah",
                                     style: TextStyle(
                                         fontWeight: FontWeight.w900,
                                         fontSize: 8)),
@@ -97,7 +97,7 @@ class _Pinjam1State extends State<Pinjam1> {
                                       color: Colors.yellow,
                                       size: 15,
                                     ),
-                                    Text("4.2",
+                                    Text("4.7",
                                         style: TextStyle(
                                             fontWeight: FontWeight.w300,
                                             fontSize: 10)),
@@ -116,23 +116,23 @@ class _Pinjam1State extends State<Pinjam1> {
                     scrollDirection: Axis.horizontal,
                     child: Column(
                       children: [
-                        Align(alignment: Alignment.topLeft,child: Text("Judul : Kancil dan Buaya")
+                        Align(alignment: Alignment.topLeft,child: Text("Judul : Dibawah Lindungan Ka'bah")
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Penulis : Rahimidin Zahari"),
+                        Align(alignment: Alignment.topLeft,child: Text("Penulis : H.Abdul Malik Karim"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Penerbit : Bestari Buana Murni"),
+                        Align(alignment: Alignment.topLeft,child: Text("Penerbit : Balai Pustaka"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Th.Terbit : November - 2016"),
+                        Align(alignment: Alignment.topLeft,child: Text("Th.Terbit : 1938"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:12),
-                        Align(alignment: Alignment.topLeft,child: Text("Kategori : Cerita Anak"),
+                        Align(alignment: Alignment.topLeft,child: Text("Kategori : Cerita Fiksi"),
                         ),
                         SizedBox(width:30),
                         SizedBox(height:10),
@@ -141,7 +141,7 @@ class _Pinjam1State extends State<Pinjam1> {
                             ElevatedButton(onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => Pinjam1()),
+                                MaterialPageRoute(builder: (context) => Pinjam11()),
                               );
                             }, child: Text("Pinjam")),
 

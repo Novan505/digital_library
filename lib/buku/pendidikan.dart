@@ -230,7 +230,7 @@ class _PendidikanState extends State<Pendidikan> {
                                     color: Colors.yellow,
                                     size: 15,
                                   ),
-                                  Text("43.5",
+                                  Text("3.5",
                                       style: TextStyle(
                                           fontWeight: FontWeight.w300,
                                           fontSize: 10)),
