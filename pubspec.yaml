@@ -84,6 +84,16 @@ flutter:
      - assets/images/pendidikan/mgp.jpg
      - assets/images/pendidikan/sangpem.png
      - assets/images/pendidikan/ranah.jpg
+     - assets/images/sejarah/baw.jpg
+     - assets/images/sejarah/gpan.jpg
+     - assets/images/sejarah/kakak.jpg
+     - assets/images/sejarah/ken.jpg
+     - assets/images/sejarah/mal.jpg
+     - assets/images/sejarah/mc.jpg
+     - assets/images/sejarah/roro.png
+     - assets/images/sejarah/san.jpg
+     - assets/images/sejarah/stu.jpg
+     - assets/images/sejarah/tm.jpg
      -
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -249,7 +249,7 @@ class _PendidikanState extends State<Pendidikan> {
                   scrollDirection: Axis.horizontal,
                   child: Column(
                     children: [
-                      Align(alignment: Alignment.topLeft,child: Text("Judul : Daring Duraring Belajar Dirumah")
+                      Align(alignment: Alignment.topLeft,child: Text("Judul : Daring Belajar Dirumah")
                       ),
                       SizedBox(width:30),
                       SizedBox(height:12),
