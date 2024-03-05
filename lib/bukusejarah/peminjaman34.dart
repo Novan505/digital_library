@@ -1,4 +1,5 @@
 
+import 'package:digital_library/konfirmasi_pinjam.dart';
 import 'package:digital_library/styles.dart';
 import 'package:flutter/material.dart';
 
@@ -141,9 +142,9 @@ class _Pinjam34State extends State<Pinjam34> {
                             ElevatedButton(onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => Pinjam34()),
+                                MaterialPageRoute(builder: (context) => KonfirmasiPinjam()),
                               );
-                            }, child: Text("Pinjam")),
+                            }, child: Text("Konfirmasi Pinjam")),
 
                         ]),
                       ],

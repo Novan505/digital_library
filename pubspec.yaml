@@ -63,48 +63,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/images/logoo.png
-     - assets/images/dongeng/sebelang.png
-     - assets/images/dongeng/kancil.png
-     - assets/images/dongeng/dc.jpg
-     - assets/images/dongeng/aks.jpg
-     - assets/images/dongeng/ala.jpg
-     - assets/images/dongeng/blm.jpg
-     - assets/images/dongeng/kk.jpg
-     - assets/images/dongeng/kkk.jpg
-     - assets/images/dongeng/kyn.jpg
-     - assets/images/dongeng/ts.jpg
-     - assets/images/pendidikan/910.jpg
-     - assets/images/pendidikan/ddbd.jpg
-     - assets/images/pendidikan/end.jpg
-     - assets/images/pendidikan/ga.png
-     - assets/images/pendidikan/laskarpel.png
-     - assets/images/pendidikan/oobi.jpg
-     - assets/images/pendidikan/r1.jpg
-     - assets/images/pendidikan/mgp.jpg
-     - assets/images/pendidikan/sangpem.png
-     - assets/images/pendidikan/ranah.jpg
-     - assets/images/sejarah/baw.jpg
-     - assets/images/sejarah/gpan.jpg
-     - assets/images/sejarah/kakak.jpg
-     - assets/images/sejarah/ken.jpg
-     - assets/images/sejarah/mal.jpg
-     - assets/images/sejarah/mc.jpg
-     - assets/images/sejarah/roro.png
-     - assets/images/sejarah/san.jpg
-     - assets/images/sejarah/stu.jpg
-     - assets/images/sejarah/tm.jpg
-     - assets/images/fiksi/dlk.jpg
-     - assets/images/fiksi/gadisk.png
-     - assets/images/fiksi/hsd.jpg
-     - assets/images/fiksi/ht.jpg
-     - assets/images/fiksi/lb.jpg
-     - assets/images/fiksi/mpk.jpg
-     - assets/images/fiksi/n5m.jpg
-     - assets/images/fiksi/oop.jpg
-     - assets/images/fiksi/rdp.jpg
-     - assets/images/fiksi/sbb.jpg
-     -
+     - assets/
+     - assets/images/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

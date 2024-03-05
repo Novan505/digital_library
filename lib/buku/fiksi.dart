@@ -11,7 +11,6 @@ import 'package:digital_library/bukufiksi/peminjaman20.dart';
 import 'package:digital_library/koleksi.dart';
 import 'package:digital_library/styles.dart';
 import 'package:flutter/material.dart';
-import 'package:digital_library/bukudongeng/peminjaman1.dart';
 
 class Fiksi extends StatefulWidget {
   const Fiksi({Key? key}) : super(key: key);
@@ -36,7 +35,7 @@ class _FiksiState extends State<Fiksi> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 20.0),
+            SizedBox(width: 20.0),
             Row(
               children: [
                 SizedBox(width: 20.0),
